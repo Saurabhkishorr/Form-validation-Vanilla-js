@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> forms </title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com.js" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <div class="container">
+        
+            <form>
+                <i class="fa-solid fa-envelope" style="color: #fff;"></i>
+
+                <div class="input-group">
+                    <label>First name</label>
+                    <input type="text" placeholder="Enter First name" onkeyup="validfirstname()" id="firstname">
+                    <span id="1stname-error"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Enter Last name" onkeyup="validlastname()" id="lastname">
+                    <span id="lastname-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Mobile no.</label>
+                    <input type="text" placeholder="123 456 7890" onkeyup="validmobileno()" id="mobileno">
+                    <span id="Mobileno-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>E-mail id</label>
+                    <input type="email" placeholder="abc@gmail.com" onkeyup="validemail()" id="email">
+                    <span id="Email-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Your message</label>
+                    <textarea rows="5" placeholder="Enter your message" onkeyup="validmessage()" id="message"></textarea>
+                    <span id="message-error"></span>
+                </div>
+                
+                <button id="submit" onclick="return validatesubmit()">Submit</button>
+                <span id="fix-error">please fix error to submit</span>
+            </form>
+       
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
